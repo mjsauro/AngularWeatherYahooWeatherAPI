@@ -14,13 +14,13 @@
         </div>
     </div>
     <div class="row">
-        <div ng-repeat="w in repeat" class="col-xs-6 col-md-3 ">
-            <div class="panel panel-default transparent ">
+        <div ng-repeat="w in repeat" class="col-xs-6 col-md-3 panel-group">
+            <div class="panel panel-default transparent">
                 <div class="panel-heading transparent ">
                     <p>{{w.day}}, {{w.date.slice(3,6)}} {{w.date | limitTo: 2}}, {{w.date | limitTo: -4}} <i class="pull-right wi wi-yahoo-{{w.code}} "></i></p>
                 </div>
 
-                <div class="panel-body ">
+                <div class="panel-body" id="pb">
                     <p>High: {{w.high}}&deg;</p>
                     <p>Low: {{w.low}}&deg;</p>
                     <p>Forecast: {{w.text}}</p>

@@ -22,7 +22,7 @@ i {
 }
 @media only screen and (max-width: 1000px) {
   .background {
-    background-image: url("images/weather.jpg");
+    background-image: url("https://raw.githubusercontent.com/mjsauro/WeatherIt/master/weather.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
