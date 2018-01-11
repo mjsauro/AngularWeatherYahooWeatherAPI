@@ -1,19 +1,29 @@
-<div class="container">
+<div class="forecast-top container">
+
     <div class="row">
-        <div class="col-md-6">
-            <p>Forecast for: {{city}}</p>
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <div class="panel panel-default transparent">
+                <div class="panel-heading ">
+                    <p>Current Conditions in {{returnedCity}} {{returnedRegion}} for {{dayFunction()}} {{ newDate }} <i class="pull-right wi wi-yahoo-{{code}} "></i> </p>
+                </div>
+                <div class="panel-body ">
+                    <p>Current Temperature {{currentTemp}}&deg;</p>
+                    <p>Current Conditions: {{currentCondition}}</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <p class="lead">Date: {{day}} {{ date }}</p>
+        <div ng-repeat="w in repeat" class="col-xs-6 col-md-3 ">
+            <div class="panel panel-default transparent ">
+                <div class="panel-heading transparent ">
+                    <p>{{w.day}}, {{w.date.slice(3,6)}} {{w.date | limitTo: 2}}, {{w.date | limitTo: -4}} <i class="pull-right wi wi-yahoo-{{w.code}} "></i></p>
                 </div>
-                <div class="panel-body">
-                    <p class="lead">High: {{high}}&deg;</p>
-                    <p class="lead">Low: {{low}}&deg;</p>
-                    <p class="lead">Forecast: {{text}}</p>
+
+                <div class="panel-body ">
+                    <p>High: {{w.high}}&deg;</p>
+                    <p>Low: {{w.low}}&deg;</p>
+                    <p>Forecast: {{w.text}}</p>
                 </div>
             </div>
         </div>

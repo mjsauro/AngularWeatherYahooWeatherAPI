@@ -7,4 +7,9 @@ weatherApp.controller('HomeController', ['$scope', 'cityService', function ($sco
 
     });
 
+    $scope.reload = function () {
+        console.log("fired");
+        return window.location.reload();
+    };
+
 }]);
