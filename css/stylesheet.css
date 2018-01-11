@@ -3,7 +3,7 @@ i {
   font-size: 2em;
 }
 .background {
-  background-image: url("https://github.com/mjsauro/WeatherIt/blob/master/weather.jpg");
+  background-image: url("https://raw.githubusercontent.com/mjsauro/WeatherIt/master/weather.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
