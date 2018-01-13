@@ -14,6 +14,12 @@ i {
 .jumbotron {
   background-color: rgba(0, 0, 0, 0);
 }
+
+.panel-body {
+  height: 150px;
+}
+
+
 .transparent {
   background-color: rgba(0, 0, 0, 0.2);
 }
